@@ -1,0 +1,64 @@
+//calculation of an electricity bill calculator
+/*
+Author Ivy Kemboi
+Date 6/9/2024
+Reg no CT101/G/24882/24
+*/
+
+# include <stdio.h>
+
+int main (){
+	int customer_ID;
+	int unit_consumed;
+	char customer_name[20] ;
+	float charge_per_unit;
+	float total_bill;
+	float surcharge=0.0;
+	
+	printf("Enter customer_ID:");
+	scanf("%d",& customer_ID);
+	
+	printf("Enter customer_name:");
+	scanf("%s",& customer_name);
+	
+	printf("Enter unit_consumed:");
+	scanf("%d",unit_consumed);
+	
+	
+	
+	
+//Determine charge per unit based on unit_consumed
+
+   if (unit_consumed <=199){charge_per_unit=1.20;}
+   else if (unit_consumed >200 && unit_consumed < 400){charge_per_unit=1.50;
+   }
+   else if (unit_consumed >=400 && unit_consumed <600){charge_per_unit =1.80;
+   }
+   else {charge_per_unit=2.00;
+   }
+
+
+
+//calculate total bill before surcharge
+
+
+total_bill= unit_consumed  *  charge_per_unit;
+
+if (total_bill>400){
+	surcharge=total_bill * 0.15;}
+	
+	//Apply the surcharge to the total_bill
+	
+	total_bill += surcharge;
+	
+	if (total_bill<100){total_bill=100;}
+	
+
+printf("customer_ID: %d \n", customer_ID);
+printf("customer_name: %s \n",customer_name);
+printf("unit_consumed: %d \n",unit_consumed);
+printf("charge_per_unit: %.2f \n",charge_per_unit);
+printf("total_bill to be paid: %.2f ksh \n",total_bill);
+
+
+return 0 ;
