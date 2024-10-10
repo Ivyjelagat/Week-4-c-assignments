@@ -1,0 +1,28 @@
+//calculate using loop for
+/*
+Author Ivy Kemboi
+Date 6/10/2024
+Reg no CT101/G/24882/24
+*/
+
+
+#include <stdio.h>
+
+int main(){
+	int i;
+	int start;
+	int stop;
+	
+	printf("Enter the start value:");
+	scanf("%d",&start);
+	
+	printf("Enter the stop value:");
+	scanf("%d",&stop);
+	
+	
+	for(int i=start; i<= stop; i ++){
+		printf ("%d\n",i);
+		
+	}
+return 0;
+}
