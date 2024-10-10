@@ -1,0 +1,37 @@
+//while loop
+/*
+Author Ivy kemboi
+Date 6/10/2024
+Reg no CT101/G/24882/24
+*/
+# include <stdio.h>
+int main(){
+	int i;
+	int start;
+	int stop;
+	
+	
+	printf("Enter the start value:");
+	scanf("%d",& start);
+	
+	
+	printf("Enter the stop value");
+	scanf("%d",& stop);
+	
+	
+	if (start>stop){
+		printf("start value should be less than or equal to stop value:\n");
+	
+		
+		printf("counting from %d to%d start; stop");
+	}
+		
+		while (start<=stop){
+			printf ("%d\n",start);
+			start ++;
+		}
+			
+return 0;
+	
+	
+	}
