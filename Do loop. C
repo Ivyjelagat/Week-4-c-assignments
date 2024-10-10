@@ -1,0 +1,33 @@
+// do loop
+/*
+Author Ivy kemboi
+Date 6/10/2024
+Reg no CT101/G/24882/24
+*/
+#include <stdio.h>
+int main (){
+	int i;
+	int start;
+	int stop;
+	
+	printf("Enter the start value:");
+	scanf("%d",& start);
+	
+	printf("Enter the  stop value:");
+	scanf("%d",& stop);
+	
+	
+	printf("numbers from %d to %d:  \n" ,start , stop);
+	i= start;
+	do{
+		printf("%d" ,  i);
+		i ++;
+	}while (i<=stop);
+	printf("\n");
+	
+	
+	
+return 0;
+
+	
+}
